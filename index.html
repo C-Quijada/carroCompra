@@ -1,12 +1,154 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/estilos.css" />
+    <title>session 6, modulo 4</title>
+  </head>
+  <body>
+    <div class="container">
+      <section class="section">
+        <div class="menu menu--bebestibles">
+          <h2>Elige algo para beber</h2>
+          <p class="menu__bajada">
+            Disfruta de nuestra clasica selección de tragos
+          </p>
+          <form action="" class="formulario formulario--bebidas">
+            <ul class="formulario__lista">
+              <li>
+                <div class="formulario__grupo">
+                  <div class="formulario__elementos">
+                    <input id="martini" type="checkbox" value="martini" class="formulario__input" />
+                    <label for="" class="formulario__label">Martini</label>
+                  </div>
+                  <p class="valor">$2.550</p>
+                </div>
+              </li>
+              <li>
+                <div class="formulario__grupo">
+                  <div class="formulario__elementos">
+                    <input value="cappucciino" type="checkbox" class="formulario__input" />
+                    <label for="" class="formulario__label">Cappucciino</label>
+                  </div>
+                  <p class="valor">$ <span>1.370</span></p>
+                </div>
+              </li>
+              <li>
+                <div class="formulario__grupo">
+                  <div class="formulario__elementos">
+                    <input value="late" type="checkbox" class="formulario__input" />
+                    <label  for="" class="formulario__label">Late</label>
+                  </div>
+                  <p class="valor">$ <span>1.350</span></p>
+                </div>
+              </li>
+              <li>
+                <div class="formulario__grupo">
+                  <div class="formulario__elementos">
+                    <input value ="mojito" type="checkbox" class="formulario__input" />
+                    <label for="" class="formulario__label">Mojito</label>
+                  </div>
+                  <p class="valor">$<span>2.290</span></p>
+                </div>
+              </li>
+            </ul>
+          </form>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="menu">
+          <h2>Menú</h2>
+          <p class="menu__bajada">Disfruta de la mejor comida Italaiana</p>
+          <form action="" class="formulario formulario--menu">
+            <div class="formulario__grupo-dc">
+              <div class="formulario__elementos">
+                <input type="checkbox" value="riso" class="formulario__input" />
+                <label for="" class="formulario__label">Insalata di riso</label>
+
+                <div class="formulario__elementos">
+                    <img class="img" src="assets/img/esalataderiso.jpg" alt="Piú delicati delle cipolle, i cipollotti sono perfetti in
+                    insalata, sul pesce e suila carne." />
+                  <p class="descripcion">
+                    L'insalata di riso é un classico delle ricette estive.
+                    Veloce e facile da preparare l'insalata di riso si puó
+                    insaporire con glli ingredienti piú vari.
+                  </p>
+                 
+                </div>
+              </div>
+              <p class="valor">$ <span>6.750</span></p>
+            </div>
+            <div class="formulario__grupo-dc">
+              <div class="formulario__elementos">
+                <input value="cipolle" type="checkbox" class="formulario__input" />
+                <label for="" class="formulario__label"
+                  >Insalata di cipoliotti</label
+                >
+                <div class="formulario__elementos">
+                    <img class="img" src="assets/img/Insalataaicipoliotti.webp" alt="Piú delicati delle cipolle, i cipollotti sono perfetti in
+insalata, sul pesce e suila carne." />
+                    <p class="descripcion">
+                    Piú delicati delle cipolle, i cipollotti sono perfetti in
+                    insalata, sul pesce e suila carne.
+                  </p></div>
+              </div>
+              <p class="valor">$ <span>5.990</span></p>
+            
+            </div>
+            <div class="formulario__grupo-dc">
+              <div class="formulario__elementos">
+                <input value="capresse" type="checkbox" class="formulario__input" />
+                <label for="" class="formulario__label"
+                  >Insalata di caprese</label
+                >
+                <div class="formulario__elementos">
+                    <img class="img" src="assets/img/Insalatadicaprese.webp" alt=" Questa piatto é un cuprotagonista di moltissimi íatti." />
+                    <p class="descripcion">
+                        Questa piatto é un cuprotagonista di moltissimi íatti.
+                      </p>
+                     
+                </div>
+              </div>
+              <p class="valor">$ <span>8.250</span></p>
+             
+            </div>
+          </form>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="menu"><form action="" class="formulario formulario--cuenta">
+            <h2>Cuenta</h2>
+            <p class="menu__bajada">Esperemos que disfrutes la comida</p>
+  
+            <table class="tabla">
+              <thead>
+                <tr>
+                  <th>Item</th>
+                  <th>Precio</th>
+                </tr>
+              </thead>
+              <tbody id="tbody">
+
+              </tbody>
+
+              <tfoot>
+                <tr>
+                  <td>Total</td>
+                  <td id="valorTotal"></td>
+                </tr>
+              </tfoot>
+             
+            </table>
+            
+          </form></div>
+      </section>
+    </div>
+
+
+    <script src="assets/js/myscript.js"></script>
+  </body>
 </html>

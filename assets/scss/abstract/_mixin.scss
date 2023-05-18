@@ -1,0 +1,5 @@
+@mixin respond-to($breack_point){
+    @media (min-width: $breack_point){
+        @content
+    }
+}

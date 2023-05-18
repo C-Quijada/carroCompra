@@ -1,0 +1,17 @@
+.contenedor{
+    width: 100%;
+   
+
+}
+
+.section{
+    margin-bottom:5px ;
+    padding: 10px;
+    
+    @include respond-to($md){
+        max-width: 500px;
+        margin: 0 auto;
+    }
+    
+}
+
